@@ -1,16 +1,16 @@
 {
-  "log": {"loglevel": "info"},
-  "inbounds": [{
-    "port": 8080,
-    "protocol": "vless",
-    "settings": {
-      "clients": [{"id": "ad37e96e-5f6b-426b-9c71-332d774268e2"}],
-      "decryption": "none"
-    },
-    "streamSettings": {
-      "network": "ws",
-      "wsSettings": {"path": "/rail-tunnel"}
-    }
-  }],
-  "outbounds": [{"protocol": "freedom"}]
+    "log": {"loglevel": "info"},
+    "inbounds": [{
+        "port": 10000,
+        "protocol": "vless",
+        "settings": {
+            "clients": [{"id": "ad37e96e-5f6b-426b-9c71-332d774268e2"}],
+            "decryption": "none"
+        },
+        "streamSettings": {
+            "network": "ws",
+            "wsSettings": {"path": "/render-tunnel"}
+        }
+    }],
+    "outbounds": [{"protocol": "freedom"}]
 }
